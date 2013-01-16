@@ -73,5 +73,11 @@ It depends on the work you want to accomplish. There are lots of PHP Framework a
 
 ## I have experience programming in other language, what is different in PHP?
 
+## How to store users passwords safely?
+Storing users password in plain-text in the database is a bad idea. Everyone can understand that.
+The last couple of years the PHP community best practice has changed alot. The short answer to the question is:
+[Use bcrypt](http://codahale.com/how-to-safely-store-a-password/). In PHP 5.5 there is a new [password hashing](https://gist.github.com/3707231) API available.
+If you are using older versions you can learn how to use [Bcrypt here](http://xqus.com/blog/how-to-store-passwords).
+
 ## I would like to contribute to opensource projects, where do I start?
 First of all you have to go to your chosen project's homepage and found their GIT repo. Then fork it. You can get started by taking a look at http://www.github.com . You will found lots of open source projects there. Just click on there and start Fork-ing.
